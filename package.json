@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/mateja176/assemblyscript-intro#readme",
   "devDependencies": {
-    "assemblyscript": "github:AssemblyScript/assemblyscript"
+    "@types/node": "^12.7.2",
+    "assemblyscript": "github:AssemblyScript/assemblyscript",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
   }
 }
