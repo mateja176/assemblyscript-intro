@@ -1,0 +1,26 @@
+{
+  "name": "intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "asbuild:untouched": "asc assembly/index.ts -b build/untouched.wasm -t build/untouched.wat --sourceMap --validate --debug",
+    "asbuild:optimized": "asc assembly/index.ts -b build/optimized.wasm -t build/optimized.wat --sourceMap --validate --optimize",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateja176/assemblyscript-intro.git"
+  },
+  "keywords": [],
+  "author": "Mateja Petrovic <mateja176@gmail.com> (https://github.com/mateja176)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateja176/assemblyscript-intro/issues"
+  },
+  "homepage": "https://github.com/mateja176/assemblyscript-intro#readme",
+  "devDependencies": {
+    "assemblyscript": "github:AssemblyScript/assemblyscript"
+  }
+}
